@@ -15,7 +15,7 @@ This method is use when we configure vlans on a device that doesn't have a switc
 
 1- i will configure the distribution router as the gateway of the topology 
 configure the ether1 interface as dhcp which is already enable by default to receive the ip address from the ISP
-![ether1 ip address](images/check_ipdhcp_client)
+![ether1 ip address](images/check_ipdhcp_client.png)
 ping to test the connection to internet
 enable nat masquerade for all ip sources 
 ` ip firewall nat add chain=srcnat action=masquerade out-interface=ether1`
@@ -27,7 +27,7 @@ As when i want to route paquet with a layer 3 cisco switch, to do a router on a 
 172.16.10.254 for vlan10
 172.16.20.254 for vlan20
 172.16.30.254 for vlan30
-![ip vlan assignment](images/ip_vlan_assignment)
+![ip vlan assignment](images/ip_vlan_assignment.png)
 i create dhcp servers for each vlan subnet
 ip dhcp-server setup 
 
@@ -42,9 +42,9 @@ I configure three vlan bridge for vlan10, 20, 30
 And i enable vlan filtering on the bridge (This step is important to be made last or i lost the connectivity, i will investigate why)
 
 4- I enable dhcp on VPCS to make sur each VPC receive an ip address in the range of its vlan subnet
-![vlan10 client](images/vlan10-client-ip-address)
-![vlan20 client](images/vlan20-client-ip-address)
-![vlan30 client](images/vlan30-client-ip-address)
+![vlan10 client](images/vlan10-client-ip-address.png)
+![vlan20 client](images/vlan20-client-ip-address.png)
+![vlan30 client](images/vlan30-client-ip-address.png)
 
 6- Test connectivity to internet
 ping the google dns server from vlan10-client

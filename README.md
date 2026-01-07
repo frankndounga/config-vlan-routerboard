@@ -42,9 +42,9 @@ I configure three vlan bridge for vlan10, 20, 30
 And i enable vlan filtering on the bridge (This step is important to be made last or i lost the connectivity, i will investigate why)
 
 4- I enable dhcp on VPCS to make sur each VPC receive an ip address in the range of its vlan subnet
-![vlan10 client](images/vlan10-client-ip-address.png)
-![vlan20 client](images/vlan20-client-ip-address.png)
-![vlan30 client](images/vlan30-client-ip-address.png)
+![vlan10 client](images/vlan10-client_ip_address.png)
+![vlan20 client](images/vlan20-client_ip_address.png)
+![vlan30 client](images/vlan30-client_ip_address.png)
 
 6- Test connectivity to internet
 ping the google dns server from vlan10-client

@@ -52,7 +52,7 @@ ping the google dns server from vlan10-client
 
 Bonus: Wireshark
 via wireshark we can see the ethernet frame is untagged coming out of the pc to the access router
-![wireshark captute](images/shark_capture_ping_vlan20client.pns)
+![wireshark capture](images/shark_capture_ping_vlan20client.png)
 
 and the frame is tagged coming out fro the access router to the distribution router via the trunk link with IEEE 80.2.1q tag.
 ![wireshark capture dot1q](images/shark_capture_dot1q.png)
